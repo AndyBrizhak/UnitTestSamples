@@ -9,7 +9,7 @@ namespace TestDoubles
   public interface ILog
   {
     // true if writing succeeded, false otherwise
-    // start with void
+    // start with void+++
     bool Write(string msg);
   }
 
