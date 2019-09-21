@@ -10,6 +10,7 @@ namespace MoqSamples
 {
   public interface ILog
   {
+    
     // true if writing succeeded, false otherwise
     bool Write(string msg);
   }
@@ -53,9 +54,19 @@ namespace MoqSamples
     [Test]
     public void MyTest()
     {
-      var mock = new Mock<ILog>();
+      var mock = new Mock<BankAccount>();
 
-      mock.SetupAllProperties();
+//      mock.SetupProperty(f => f.Balance);
+//
+//      BankAccount ba = mock.Object;
+//      ba.Balance = 100;
+
+       mock.SetupAllProperties();
+        BankAccount ba = mock.Object;
+
+        var b = ba.Balance;
+Console.WriteLine(b);
+Console.ReadKey();
 
     }
 
