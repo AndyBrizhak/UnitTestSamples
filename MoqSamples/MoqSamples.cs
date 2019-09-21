@@ -65,8 +65,8 @@ namespace MoqSamples
         BankAccount ba = mock.Object;
 
         var b = ba.Balance;
-Console.WriteLine(b);
-Console.ReadKey();
+        Console.WriteLine(b);
+        Console.ReadKey();
 
     }
 
