@@ -50,6 +50,15 @@ namespace MoqSamples
       Assert.That(ba.Balance, Is.EqualTo(200));
     }
 
+    [Test]
+    public void MyTest()
+    {
+      var mock = new Mock<ILog>();
+
+      mock.SetupAllProperties();
+
+    }
+
 
   }
 }
