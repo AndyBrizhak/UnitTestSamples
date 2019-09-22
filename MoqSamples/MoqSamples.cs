@@ -54,6 +54,8 @@ namespace MoqSamples
     [Test]
     public void MyTest()
     {
+      
+      //
       var mock = new Mock<BankAccount>();
 
 //      mock.SetupProperty(f => f.Balance);
