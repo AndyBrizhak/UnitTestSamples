@@ -5,87 +5,8 @@ using NUnit.Framework;
 
 namespace MoqSamples
 {
-  public class Bar : IEquatable<Bar>
-  {
-    // introduced later
-    public string Name { get; set; }
-
-    public bool Equals(Bar other)
-    {
-      if (ReferenceEquals(null, other)) return false;
-      if (ReferenceEquals(this, other)) return true;
-      return string.Equals(Name, other.Name);
-    }
-
-    public override bool Equals(object obj)
-    {
-      if (ReferenceEquals(null, obj)) return false;
-      if (ReferenceEquals(this, obj)) return true;
-      if (obj.GetType() != this.GetType()) return false;
-      return Equals((Bar) obj);
-    }
-
-    public override int GetHashCode()
-    {
-      return (Name != null ? Name.GetHashCode() : 0);
-    }
-
-    public static bool operator ==(Bar left, Bar right)
-    {
-      return Equals(left, right);
-    }
-
-    public static bool operator !=(Bar left, Bar right)
-    {
-      return !Equals(left, right);
-    }
-  }
-
-  public interface IBaz {
-    string Name { get; }
-  }
-
-  public interface IFoo
-  {
-    bool DoSomething(string value);
-    string ProcessString(string value);
-    bool TryParse(string value, out string outputValue);
-    bool Submit(ref Bar bar);
-    int GetCount();
-    bool Add(int amount);
-
-    string Name { get; set; }
-    IBaz SomeBaz { get; }
-    int SomeOtherProperty { get; set; }
-  }
-
   public delegate void AlienAbductionEventHandler(int galaxy, bool returned);
 
-  public interface IAnimal
-  {
-    event EventHandler FallsIll;
-    void Stumble();
-
-    event AlienAbductionEventHandler AbductedByAliens;
-  }
-
-  public class Doctor
-  {
-    public int TimesCured;
-    public int AbductionsObserved;
-
-    public Doctor(IAnimal animal)
-    {
-      animal.FallsIll += (sender, args) =>
-      {
-        Console.WriteLine("I will cure you!");
-        TimesCured++;
-      };
-
-      animal.AbductedByAliens += (galaxy, returned) => ++AbductionsObserved;
-    }
-  }
-  
   [TestFixture]
   public class MethodSamples
   {
@@ -215,7 +136,7 @@ namespace MoqSamples
   }
 
   [TestFixture]
-  public class NonMethodSamples
+  public partial class NonMethodSamples
   {
     [Test]
     public void Properties()
@@ -324,23 +245,6 @@ namespace MoqSamples
       mock.Object.DoSomething("pong");
     }
 
-    public class Consumer
-    {
-      private IFoo foo;
-
-      public Consumer(IFoo foo)
-      {
-        this.foo = foo;
-      }
-
-      public void Hello()
-      {
-        foo.DoSomething("ping");
-        var name = foo.Name;
-        foo.SomeOtherProperty = 123;
-      }
-    }
-
     [Test]
     public void Verification()
     {
@@ -396,12 +300,6 @@ namespace MoqSamples
 
       // verify all mocks
       repository.Verify();
-    }
-
-    abstract class Person
-    {
-      protected int SSN { get; set; }
-      protected abstract void Execute(string cmd);
     }
 
     [Test]

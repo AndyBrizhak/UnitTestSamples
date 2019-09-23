@@ -53,8 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bar.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="IAnimal.cs" />
+    <Compile Include="IBaz.cs" />
+    <Compile Include="IFoo.cs" />
     <Compile Include="MoqSamples.cs" />
     <Compile Include="MoqSpecific.cs" />
+    <Compile Include="NonMethodSamples.Consumer.cs" />
+    <Compile Include="NonMethodSamples.Person.cs" />
     <Compile Include="TestDoubles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

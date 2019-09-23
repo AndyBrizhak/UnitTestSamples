@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="BankAccountWithOverdraft.cs" />
     <Compile Include="CodeCoverage.cs" />
     <Compile Include="DataDrivenTests.cs" />
     <Compile Include="Tests.cs" />
