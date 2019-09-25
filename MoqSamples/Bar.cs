@@ -2,6 +2,9 @@ using System;
 
 namespace MoqSamples
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Bar : IEquatable<Bar>
     {
         // introduced later
