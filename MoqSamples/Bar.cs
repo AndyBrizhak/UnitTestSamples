@@ -24,7 +24,10 @@ namespace MoqSamples
             if (obj.GetType() != this.GetType()) return false;
             return Equals((Bar) obj);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             return (Name != null ? Name.GetHashCode() : 0);
