@@ -32,7 +32,12 @@ namespace MoqSamples
         {
             return (Name != null ? Name.GetHashCode() : 0);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
         public static bool operator ==(Bar left, Bar right)
         {
             return Equals(left, right);
