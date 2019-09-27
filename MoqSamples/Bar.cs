@@ -16,7 +16,11 @@ namespace MoqSamples
             if (ReferenceEquals(this, other)) return true;
             return string.Equals(Name, other.Name);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;
