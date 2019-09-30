@@ -37,7 +37,10 @@ namespace MoqSamples
       // value can be null, don't worry!
       Assert.That(mock.Object.DoSomething(null), Is.False);
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void ArgumentDependentMatching()
     {
