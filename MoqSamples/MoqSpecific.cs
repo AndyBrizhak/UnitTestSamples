@@ -62,7 +62,10 @@ namespace MoqSamples
       mock.Setup(foo => foo.DoSomething(It.IsRegex("[a-z]+")))
         .Returns(true);
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void OutArguments()
     {
