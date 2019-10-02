@@ -84,7 +84,10 @@ namespace MoqSamples
       Console.WriteLine(thisShouldBeFalse);
       Console.WriteLine(result); // weirdly this is still "ok"
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void RefArguments()
     {
