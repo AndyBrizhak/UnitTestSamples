@@ -101,7 +101,10 @@ namespace MoqSamples
       Assert.IsTrue(mock.Object.Submit(ref bar));
       Assert.IsFalse(mock.Object.Submit(ref someOtherBar));
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void FakingInvocationArguments()
     {
