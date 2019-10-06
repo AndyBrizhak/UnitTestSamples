@@ -114,7 +114,11 @@ namespace MoqSamples
       Assert.That(mock.Object.ProcessString("ABC"), Is.EqualTo("abc"));
       // plenty of overloads available
     }
-
+    
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void ThrowingExceptions()
     {
