@@ -138,7 +138,11 @@ namespace MoqSamples
 
       mock.Object.DoSomething("test"); // no exception
     }
-
+    
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void DifferentReturnsOnEachCall()
     {
