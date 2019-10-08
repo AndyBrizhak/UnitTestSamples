@@ -157,6 +157,9 @@ namespace MoqSamples
     }
   }
 
+  /// <summary>
+  /// 
+  /// </summary>
   [TestFixture]
   public partial class NonMethodSamples
   {
