@@ -163,6 +163,9 @@ namespace MoqSamples
   [TestFixture]
   public partial class NonMethodSamples
   {
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void Properties()
     {
