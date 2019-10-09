@@ -200,7 +200,10 @@ namespace MoqSamples
       mock.VerifySet(foo => { foo.Name = "def"; }, Times.AtLeastOnce,
         "You did not set foo.Name to 'def' at least once");
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void ValueTracking()
     {
