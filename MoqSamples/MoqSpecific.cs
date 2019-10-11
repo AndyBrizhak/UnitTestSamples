@@ -226,7 +226,11 @@ namespace MoqSamples
       // won't work if you only stubbed one property
       Assert.That(mock.Object.SomeOtherProperty, Is.EqualTo(123));
     }
-
+    
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void EventMocking()
     {
