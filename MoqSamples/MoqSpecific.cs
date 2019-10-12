@@ -250,7 +250,10 @@ namespace MoqSamples
       mock.Raise(a => a.AbductedByAliens += null, 42, true);
       Assert.That(doctor.AbductionsObserved, Is.EqualTo(1));
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void Callbacks()
     {
