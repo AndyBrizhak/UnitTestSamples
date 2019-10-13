@@ -282,7 +282,10 @@ namespace MoqSamples
         .Callback(() => Console.WriteLine("after pong"));
       mock.Object.DoSomething("pong");
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void Verification()
     {
