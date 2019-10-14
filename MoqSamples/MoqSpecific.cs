@@ -307,6 +307,10 @@ namespace MoqSamples
       mock.VerifySet(foo => foo.SomeOtherProperty = It.IsInRange(100, 200, Range.Inclusive));
     }
 
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void BehaviorCustomization()
     {
