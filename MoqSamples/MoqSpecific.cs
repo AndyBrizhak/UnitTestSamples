@@ -346,7 +346,10 @@ namespace MoqSamples
       // verify all mocks
       repository.Verify();
     }
-
+    
+    /// <summary>
+    /// 
+    /// </summary>
     [Test]
     public void ExpectationsForProtectedMembers()
     {
