@@ -64,7 +64,7 @@ namespace MoqSamples
     }
     
     /// <summary>
-    /// 
+    /// +
     /// </summary>
     [Test]
     public void OutArguments()
