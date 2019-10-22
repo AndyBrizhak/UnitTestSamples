@@ -141,7 +141,7 @@ namespace MoqSamples
     
     
     /// <summary>
-    /// 
+    /// +
     /// </summary>
     [Test]
     public void DifferentReturnsOnEachCall()
