@@ -267,7 +267,8 @@ namespace MoqSamples
       Assert.That(x, Is.EqualTo(1));
 
       // invocation arguments
-      //+
+      //++
+      //
       mock.Setup(foo => foo.DoSomething(It.IsAny<string>()))
         .Returns(true)
         .Callback((string s) => x += s.Length);
