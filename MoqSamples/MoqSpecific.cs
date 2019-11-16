@@ -164,7 +164,7 @@ namespace MoqSamples
   public partial class NonMethodSamples
   {
     /// <summary>
-    /// +++
+    /// ++++
     /// </summary>
     [Test]
     public void Properties()
