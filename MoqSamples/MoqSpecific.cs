@@ -103,7 +103,7 @@ namespace MoqSamples
     }
     
     /// <summary>
-    /// ++
+    /// +++
     /// </summary>
     [Test]
     public void FakingInvocationArguments()
