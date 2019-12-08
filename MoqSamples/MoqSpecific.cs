@@ -7,7 +7,7 @@ namespace MoqSamples
 {
   public delegate void AlienAbductionEventHandler(int galaxy, bool returned);
   /// <summary>
-  /// +
+  /// ++
   /// </summary>
   [TestFixture]
   public class MethodSamples
