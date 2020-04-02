@@ -21,7 +21,8 @@ namespace UnitTestSamples
       Balance += amount;
     }
 /// <summary>
-/// ++++++++++
+/// +++++++++++
+/// 
 /// </summary>
 /// <param name="amount"></param>
 /// <returns></returns>
