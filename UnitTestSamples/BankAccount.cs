@@ -21,7 +21,8 @@ namespace UnitTestSamples
       Balance += amount;
     }
 /// <summary>
-/// +++++++++++++++++++++++++++
+/// ++++++++++++++++++++++++++++
+/// 
 /// 
 /// 
 /// </summary>
